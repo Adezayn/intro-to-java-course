@@ -4,7 +4,8 @@ public class StringExercises {
 
     public String fromCharacters(char[] characters) {
         // TODO - Write code that creates a String from the input array of characters
-       String stringValue = characters.toString();
+        // String stringValue =  String.join("", String.valueOf(characters));
+        String stringValue = String.valueOf(characters);
        return stringValue;
         // throw new RuntimeException("Not implemented");
     }
