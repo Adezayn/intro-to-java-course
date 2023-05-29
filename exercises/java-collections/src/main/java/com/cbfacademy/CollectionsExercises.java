@@ -6,50 +6,94 @@ public class CollectionsExercises {
 
     public LinkedList<Integer> useLinkedList() {
         // TODO: create an empty linked list
+        LinkedList<Integer> linkedList = new LinkedList<>();
         //  - add 4 as the first element of the list
+        linkedList.addFirst(4);
         //  - then add 5, 6, 8, 2, 9 to the the list
+        linkedList.add(5);
+        linkedList.add(6);
+        linkedList.add(8);
+        linkedList.add(2);
+        linkedList.add(9);
         //  - add another 2 as the last element of the list
+        linkedList.addLast(2);
         //  - add 4 as the 3rd element of the list
+        linkedList.add(2, 4);
         //  - invoke the method element() on the list and print the result on the screen
+        System.out.println(linkedList.element());
         //  - return the list
-        throw new RuntimeException("Not implemented");
+        return linkedList;
     }
 
     public Stack<Integer> useStack() {
         // TODO: create an empty stack
+        Stack<Integer> stack = new Stack<>();
         //  - add 5, 6, 8, 9 to the the stack
+        stack.add(5); 
+        stack.add(6); 
+        stack.add(8);
+        stack.add(9);
         //  - print the first element of the stack on the screen
+        System.out.println(stack.firstElement() + " ::: first element");
         //  - print the last element of the stack on the screen
+        System.out.println(stack.lastElement() + " ::: last element");
         //  - invoke the method pop() on the stack and print the result on the screen
+        System.out.println(stack.pop() +  " ::: pop of the stack");
         //  - invoke the push(4) method on the stack
+        System.out.println(stack.push(4));
         //  - return the stack
-        throw new RuntimeException("Not implemented");
+        return stack;
     }
 
     public ArrayDeque<Integer> useArrayDeque() {
         // TODO: create an empty arrayDeque
+        ArrayDeque<Integer> queue = new ArrayDeque<>();
         //  - add 5, 6, 8, 9 to the the stack
+        queue.add(5);
+        queue.add(6);
+        queue.add(8);
+        queue.add(9);
+        System.out.println("-----------arraydeque--------------\n");
         //  - print the first element of the queue on the screen
+        System.out.println(queue.getFirst() + " ::: first element");
         //  - print the last element of the queue on the screen
+        System.out.println(queue.getLast() + " ::: last element");
         //  - invoke the method poll() on the queue and print the result on the screen
+        Integer polledInteger = queue.poll();
+        System.out.println(polledInteger + " ::: result of poll method");
         //  - invoke the element() method on the queue and print the result on the screen
+        Integer eInteger = queue.element();
+        System.out.println(eInteger + " ::: element method ");
         //  - return the queue
-        throw new RuntimeException("Not implemented");
+        return queue;
     }
 
     public HashMap<Integer, String> useHashMap() {
         // TODO: create an empty hash map
+        HashMap<Integer, String> hashMap = new HashMap<>();
         //  - add {1, TypeScript} entry to the map
+        hashMap.put(1, "TypeScript");
         //  - add {2, Kotlin} entry to the map
+        hashMap.put(2, "Kotlin");
         //  - add {3, Python} entry to the map
+        hashMap.put(3, "Python");
         //  - add {4, Java} entry to the map
+        hashMap.put(4, "Java");
         //  - add {5, JavaScript} entry to the map
+        hashMap.put(5, "JavaScript");
         //  - add {6, Rust} entry to the map
+        hashMap.put(6, "Rust");
+        System.out.println("\n-----------hashmap--------------\n");
         //  - determine the set of keys from the map and print it on the screen
-        //  - determine the set of keys from the map and print it on the screen
+        Set<Integer> set = hashMap.keySet();
+        System.out.println(set + " ::: set of keys");
         //  - determine whether the map contains "English" as a language and print the result on the screen
+        boolean value = hashMap.containsValue("English");
+        System.out.println(value + " ::: value of hashmap");
+        value = hashMap.containsValue("Java");
+        System.out.println(value + " ::: is Java present");
         //  - return the map
-        throw new RuntimeException("Not implemented");
+       return hashMap;
     }
 
     public String getName() {
